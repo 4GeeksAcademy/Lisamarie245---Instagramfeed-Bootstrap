@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Fontawesome link (For the icons) -->
+<script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha384-nCUvi5RtT47h6w3JzI7qDd8u2tYJjb1NNF9oj5F5DfWck/bRVs9pdGYPXoZ9JUNn" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styless.css">
+  <title>Instagram feed With Bootstrap</title>
+</head>
+<body>
+    <!-- nav bar -->
+     <div class="navbarcontainer">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid text-center">
+            <a class="navbar-brand" href="#">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+             <!-- botones del navbar -->
+            <div class="botonesdelnavbar">
+              <div class="d-flex justify-content-end">
+                <!-- create a post button -->
+                <nav class="navbar bg-body-tertiary">
+                  <form class="container-fluid justify-content-end">
+                    <button class="btn btn-sm btn-success" type="button">Create a new post</button>
+                  </form>
+                </nav>
+
+              <!-- Dropdown -->
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="centrarhome d-flex justify-content-center">
+        <!-- bootstrap tabs with js -->
+        <div class="tabs">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
+
+          <!-- ----- SECCION HOME ----  -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <h1>HOME</h1>
+              <div class="container text-center overflow-hidden">
+                <div class="row row-cols-2 ">
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+                </div>
+                <div class="row" >
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/2n13trz.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+                </div>
+                <div class="row">
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- --- SECCION DE PERFIL --- -->
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <h1>Perfil</h1>
+              <div class="text-center">
+                <img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw p-1" alt="img">
+              </div>
+              <div class="text-center">
+                <img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw p-1" alt="img">
+              </div>
+              <div class="text-center">
+                <img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw p-1" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- - Instragram feed - 
+    <div class="container text-center overflow-hidden" >
+        <div class="row row-cols-2 ">
+          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+        </div>
+        <div class="row" >
+          <div class="col-4 p-1"><img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/2n13trz.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+        </div>
+        <div class="row">
+          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+        </div>
+      </div> -->
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

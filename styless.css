@@ -1,0 +1,29 @@
+img {
+    border-radius: 1px;
+    padding: 0px;
+    height: 20vw;    
+}
+
+.dropdown-menu {
+    margin-right: 50%;
+}
+
+.botonesdelnavbar {
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.tabs {
+    display: inline;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+
+
+    
