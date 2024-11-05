@@ -1,5 +1,4 @@
 img {
-    border-radius: 1px;
     padding: 0px;
     height: 20vw;    
 }
@@ -15,7 +14,8 @@ img {
 
 .navbar-brand {
     margin-left: 5%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 label {
@@ -29,8 +29,36 @@ label {
  }
 
  .camera {
-    margin-right: 7px;
- }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;              /* Tamaño del botón */
+    height: 30px;             /* Tamaño del botón */
+    background-color: rgb(236, 231, 231); /* Color de fondo del botón de Instagram */
+    color: black;             /* Color del ícono */
+    font-size: 16px;          /* Tamaño del ícono */
+    cursor: pointer;          /* Cambia el cursor para indicar que es un botón */
+    transition: background-color 0.3s;
+    border-radius: 3px; /* Animación para el efecto hover */
+    margin-top: 2px;
+    margin-right: 2px;
+  }
+
+  .location {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;              /* Tamaño del botón */
+    height: 30px;             /* Tamaño del botón */
+    background-color: rgb(236, 231, 231); /* Color de fondo del botón de Instagram */
+    color: black;             /* Color del ícono */
+    font-size: 16px;          /* Tamaño del ícono */
+    cursor: pointer;          /* Cambia el cursor para indicar que es un botón */
+    transition: background-color 0.3s;
+    border-radius: 3px; /* Animación para el efecto hover */
+    margin-top: 2px;
+  }
+ 
 
  .headercards {
     flex-direction: row;
