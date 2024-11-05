@@ -13,7 +13,7 @@
 <body>
     <!-- nav bar -->
      <div class="navbarcontainer">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
           <div class="container-fluid text-center">
             <a class="navbar-brand" href="#">
               <i class="fa-brands fa-instagram"></i>
@@ -25,12 +25,38 @@
              <!-- botones del navbar -->
             <div class="botonesdelnavbar">
               <div class="d-flex justify-content-end">
-                <!-- create a post button -->
-                <nav class="navbar bg-body-tertiary">
-                  <form class="container-fluid justify-content-end">
-                    <button class="btn btn-sm btn-success" type="button">Create a new post</button>
-                  </form>
-                </nav>
+
+  <!-- ----- MODAL CREATE A POST BUTTON----- -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"> Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label text-left"> <strong>Caption:</strong></label>
+                    <textarea class="form-control text-muted" id="message-text">Add the caption of your post here</textarea>
+                    <div class="iconsofmodal"> 
+                      <div class="camera"><i class="fa-solid fa-camera"></i></div>
+                      <div class="location"><i class="fa-solid fa-location-dot"></i></div>
+                    </div>
+                  </div>            
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
               <!-- Dropdown -->
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -43,6 +69,7 @@
                           <li><a class="dropdown-item" href="#">Profile</a></li>
                           <li><a class="dropdown-item" href="#">Accesibility</a></li>
                           <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><a class="dropdown-item bg-body-tertiary" href="#">Log out</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -57,26 +84,25 @@
 
 
 
-      <div class="centrarhome d-flex justify-content-center">
+     
         <!-- bootstrap tabs with js -->
-        <div class="tabs">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+        
+          <ul  class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
             </li>
-
+          </ul>
           <!-- ----- SECCION HOME ----  -->
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-              <h1>HOME</h1>
               <div class="container text-center overflow-hidden">
                 <div class="row row-cols-2 ">
-                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-                  <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/CZ0cbF1.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/7oXLlSk.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/lKpyQWl.jpeg" class="w-100  h-20vw" alt="..."></div>
                 </div>
                 <div class="row" >
                   <div class="col-4 p-1"><img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw" alt="..."></div>
@@ -84,54 +110,97 @@
                   <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
                 </div>
                 <div class="row">
-                  <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
-                  <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/pT5WiSB.jpeg" class="w-100  h-20vw" alt="..."></div>
+                  <div class="col-4 p-1"><img src="https://i.imgur.com/Qh3Ig8f.jpeg" class="w-100  h-20vw" alt="..."></div>
                   <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
                 </div>
               </div>
             </div>
           </div>
 
-        <!-- --- SECCION DE PERFIL --- -->
-
+          <!-- --- SECCION DE PERFIL --- -->
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-              <h1>Perfil</h1>
-              <div class="text-center">
-                <img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw p-1" alt="img">
+              
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 mx-auto p-1">
+                <div class="card mb-2" style="max-width: 100%;">
+                  <div class="card-body">
+                    <div class="headercards d-flex justify-content-between">
+                      <h5 class="card-title">A very beautiful day in Paris!</h5>
+                      <small>08/26</small>
+                    </div>
+                    <img src="https://i.imgur.com/wwkqvQm.jpeg" class="card-img-top img-fluid" alt="img">
+                    <div class="cardfoot">
+                      <div class="likes">
+                        <p><strong>470,987 Likes</strong></p>
+                      </div>
+                      <p class="card-text">Loved this day with my family at Paris. One of the best days ever!</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text-center">
-                <img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw p-1" alt="img">
+              
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 mx-auto p-1">
+                <div class="card mb-2" style="max-width: 100%;">
+                  <div class="card-body">
+                    <div class="headercards d-flex justify-content-between">
+                      <h5 class="card-title">In LOVE with Maldives</h5>
+                      <small>10/24</small>
+                    </div>
+                    <img src="https://i.imgur.com/lKpyQWl.jpeg" class="card-img-top img-fluid" alt="img">
+                    <div class="cardfoot">
+                      <div class="likes">
+                        <p><strong>204,000 Likes</strong></p>
+                      </div>
+                      <p class="card-text">Who wouldn't like to be here at this exact moment? Cause I love it!</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="text-center">
-                <img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw p-1" alt="img">
+          
+              <!-- Card 3 -->
+              <div class="col-12 col-md-6 mx-auto p-1">
+                <div class="card mb-2" style="max-width: 100%;">
+                  <div class="card-body">
+                    <div class="headercards d-flex justify-content-between">
+                      <h5 class="card-title">Resting at a Hotel </h5>
+                      <small><small>08/09</small></small>
+                    </div>
+                    <img src="https://i.imgur.com/EQWQqWL.jpeg" class="card-img-top img-fluid" alt="img">
+                    <div class="cardfoot">
+                      <div class="likes">
+                        <p><strong>10,109 Likes</strong></p>
+                      </div>
+                      <p class="card-text">I just like the way hotel looks. Very luxurious travel paid by my job as a developer yei!</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+          
+              <!-- Card 4 -->
+              <div class="col-12 col-md-6 mx-auto p-1">
+                <div class="card mb-2" style="max-width: 100%;">
+                  <div class="card-body">
+                    <div class="headercards d-flex justify-content-between">
+                      <h5 class="card-title">Camping under stars<h5>
+                      <small>06/11</small>
+                    </div>
+                    <img src="https://i.imgur.com/7oXLlSk.jpeg" class="card-img-top img-fluid" alt="img">
+                    <div class="cardfoot">
+                      <div class="likes">
+                        <p><strong>500,079 Likes</strong></p>
+                      </div>
+                      <p class="card-text">Been through a lot lately. Just loving with the beautiful stars as our ceilings... nothing compares to this.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
             </div>
           </div>
-        </div>
-      </div>
-
-
-
-    <!-- - Instragram feed - 
-    <div class="container text-center overflow-hidden" >
-        <div class="row row-cols-2 ">
-          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-        </div>
-        <div class="row" >
-          <div class="col-4 p-1"><img src="https://i.imgur.com/4huA5wF.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/2n13trz.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/bESuBjS.jpeg" class="w-100  h-20vw" alt="..."></div>
-        </div>
-        <div class="row">
-          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
-          <div class="col-4 p-1"><img src="https://i.imgur.com/uO7J7uU.jpeg" class="w-100  h-20vw" alt="..."></div>
-        </div>
-      </div> -->
-
+          
 
 
 

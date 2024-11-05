@@ -18,10 +18,38 @@ img {
     padding-bottom: 5%;
 }
 
-.tabs {
-    display: inline;
-    margin-left: 50%;
-    margin-right: 50%;
+label {
+   float: left;
+}
+
+.iconsofmodal {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+ }
+
+ .camera {
+    margin-right: 7px;
+ }
+
+ .headercards {
+    flex-direction: row;
+ }
+
+ .likes {
+    text-align: left;
+    justify-content: space-between;
+ }
+
+ h5 {
+    float:left;
+    padding-bottom: 0%;
+}
+
+h7 {
+    float:right;
+    color: black;
+    font-weight: normal;
 }
 
 
